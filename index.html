@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Electrician Career Guide</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f9ff;
+      color: #1a1a1a;
+      line-height: 1.6;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    /* Navbar */
+    nav {
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .nav-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0.75rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .brand {
+      color: #f9a825;
+      font-weight: 700;
+      font-size: 1.4rem;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.25rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #2c3e50;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+      color: #f9a825;
+      outline: none;
+    }
+
+    /* Section styling */
+    section {
+      background: #fff;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+      transition: box-shadow 0.3s ease;
+    }
+
+    section:hover {
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 60px;
+      height: 5px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, #f9a825, #ffc107);
+    }
+
+    ul {
+      padding-left: 1.25rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      margin-top: 1rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      nav .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="brand">Electrician Career</a>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#earnings">Earning Potential</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Career Overview -->
+    <section id="overview" tabindex="0" aria-label="Career Overview">
+      <h2>Career Overview</h2>
+      <p>
+        Electricians are the <strong>powerhouse professionals</strong> who install, maintain, and repair electrical systems that keep homes, businesses, and industries running safely and efficiently. From wiring new construction to troubleshooting electrical faults, electricians work with precision and expertise.
+      </p>
+      <p>
+        Their work environment varies — they can be on construction sites, inside residential homes, or working on industrial machinery. They ensure that every connection is safe, reliable, and up to code, powering modern life one wire at a time.
+      </p>
+      <img src="images/h.jpg" alt="Electrician wiring electrical panel" />
+    </section>
+
+    <!-- Education Requirements -->
+    <section id="education" tabindex="0" aria-label="Education Requirements">
+      <h2>Education Requirements</h2>
+      <p>To become a certified electrician, you'll need:</p>
+      <ul>
+        <li>High school diploma or GED with strong math and science background</li>
+        <li>Completion of an apprenticeship program (typically 4-5 years)</li>
+        <li>Passing licensing exams as required by your state or locality</li>
+      </ul>
+      <p>Key skills include electrical theory, blueprint reading, safety regulations, and troubleshooting electrical circuits.</p>
+      <h3>Top Educational Programs & Institutions:</h3>
+      <ul>
+        <li><a href="https://www.njatc.org" target="_blank" rel="noopener">National Joint Apprenticeship and Training Committee (NJATC)</a></li>
+        <li><a href="https://www.lincolnelectric.com" target="_blank" rel="noopener">Lincoln Electric Welding Schools</a></li>
+        <li><a href="https://www.technicalcolleges.org" target="_blank" rel="noopener">Local Technical and Trade Schools</a></li>
+      </ul>
+    </section>
+
+    <!-- Earning Potential -->
+    <section id="earnings" tabindex="0" aria-label="Earning Potential">
+      <h2>Earning Potential</h2>
+      <p>Based on 2024 U.S. Bureau of Labor Statistics data:</p>
+      <ul>
+        <li>Median annual salary: <strong>$60,040</strong></li>
+        <li>Entry-level electricians typically start at around $36,000 per year.</li>
+        <li>Experienced or specialized electricians can earn upwards of $90,000 annually.</li>
+        <li>Job growth is projected at 9% through 2032 — faster than the average for most careers.</li>
+      </ul>
+      <p>Factors such as location, experience, certifications, and specialization affect earnings.</p>
+      <p class="text-muted"><em>Source: <a href="https://www.bls.gov/ooh/construction-and-extraction/electricians.htm" target="_blank" rel="noopener">Bureau of Labor Statistics</a></em></p>
+    </section>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+/* Base font & smooth text */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f9ff;
+  color: #1a1a1a;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Buttons with gradient & shadow */
+.btn-custom {
+  background: linear-gradient(90deg, #f9a825, #ffc107);
+  border: none;
+  color: #2c3e50;
+  font-weight: 600;
+  padding: 0.65rem 1.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.4);
+  transition: all 0.4s ease;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+  background: linear-gradient(90deg, #ffc107, #f9a825);
+  color: #fff;
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.7);
+  transform: translateY(-3px);
+  outline: none;
+}
+
+/* Section container with shadow and padding */
+.section-container {
+  background: #ffffff;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+  margin-bottom: 3rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.section-container:hover {
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Section titles with gradient underline */
+h2.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  color: #2c3e50;
+}
+
+h2.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -12px;
+  width: 70px;
+  height: 5px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #f9a825, #ffc107);
+}
+
+/* Smooth fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
