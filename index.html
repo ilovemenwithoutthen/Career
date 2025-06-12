@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Electrician Career Guide</title>
+  <meta name="description" content="A comprehensive guide on becoming an electrician, including career overview, education requirements, and earning potential." />
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,6 +13,24 @@
       line-height: 1.6;
       margin: 0;
       scroll-behavior: smooth;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #f9a825;
+      color: #fff;
+      padding: 8px 16px;
+      z-index: 1001;
+      transition: top 0.3s ease;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .skip-link:focus {
+      top: 0;
+      outline: none;
     }
 
     .container {
@@ -61,9 +80,10 @@
     }
 
     nav ul li a:hover,
-    nav ul li a:focus {
+    nav ul li a:focus-visible {
       color: #f9a825;
-      outline: none;
+      outline: 2px solid #f9a825;
+      outline-offset: 2px;
     }
 
     section {
@@ -132,7 +152,9 @@
 </head>
 <body>
 
-  <nav>
+  <a href="#overview" class="skip-link">Skip to main content</a>
+
+  <nav role="navigation">
     <div class="nav-container">
       <a href="#" class="brand">Electrician Career</a>
       <ul>
@@ -143,10 +165,10 @@
     </div>
   </nav>
 
-  <main class="container">
+  <main role="main" class="container">
 
     <!-- Career Overview -->
-    <section id="overview" tabindex="0" aria-label="Career Overview">
+    <section id="overview" aria-label="Career Overview">
       <h2>Career Overview</h2>
       <p>
         Electricians are the <strong>powerhouse professionals</strong> who install, maintain, and repair electrical systems that keep homes, businesses, and industries running safely and efficiently. From wiring new construction to troubleshooting electrical faults, electricians work with precision and expertise.
@@ -154,10 +176,10 @@
       <p>
         Their work environment varies — they can be on construction sites, inside residential homes, or working on industrial machinery. They ensure that every connection is safe, reliable, and up to code, powering modern life one wire at a time.
       </p>
-      <img src="images/h.jpg" alt="Electrician wiring electrical panel" />
+      <img src="images/h.jpg" alt="Electrician wiring electrical panel" loading="lazy" />
     </section>
 
-    <section id="education" tabindex="0" aria-label="Education Requirements">
+    <section id="education" aria-label="Education Requirements">
       <h2>Education Requirements</h2>
       <p>To become a certified electrician, you'll need:</p>
       <ul>
@@ -166,9 +188,15 @@
         <li>Passing licensing exams as required by your state or locality</li>
       </ul>
       <p>Key skills include electrical theory, blueprint reading, safety regulations, and troubleshooting electrical circuits.</p>
-     
+      <h3>Top Educational Programs & Institutions:</h3>
+      <ul>
+        <li>National Joint Apprenticeship and Training Committee (NJATC)</li>
+        <li>Lincoln Electric Welding Schools</li>
+        <li>Local Technical and Trade Schools</li>
+      </ul>
+    </section>
 
-    <section id="earnings" tabindex="0" aria-label="Earning Potential">
+    <section id="earnings" aria-label="Earning Potential">
       <h2>Earning Potential</h2>
       <p>Based on 2024 U.S. Bureau of Labor Statistics data:</p>
       <ul>
@@ -178,6 +206,7 @@
         <li>Job growth is projected at 9% through 2032 — faster than the average for most careers.</li>
       </ul>
       <p>Factors such as location, experience, certifications, and specialization affect earnings.</p>
+      <p class="text-muted"><em>Source: Bureau of Labor Statistics</em></p>
     </section>
 
   </main>
