@@ -26,7 +26,6 @@ body {
   outline: none;
 }
 
-/* Section container with shadow and padding */
 .section-container {
   background: #ffffff;
   padding: 2rem 2rem;
@@ -64,9 +63,4 @@ h2.section-title::after {
   animation: fadeIn 1.8s ease forwards;
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 
